@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@font-face {
+    font-family: cordel;
+    src: url(fontes/eldes_cordel/EldesCordel-Demo.otf) format("opentype");
+}
+
+:root{
+    --cor01: #EB832B;
+    --cor02: #643BEB;
+    --cor03: #3BEB45;
+    --cor04: #9E9DA3;
+    
+    --fonte-central: 'Yellowtail', cursive;
+    --fonte-titulo: 'cordel', impact, sans-serif;
+    --fonte-trechos: 'Playwrite IT Moderna', sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: var(--cor01);
+    margin-top: -21px;
+    padding-bottom: 5px;
+    padding-top: 12px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px var(--cor04);
+}
+header h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2.8em;
+    text-shadow: 1px 1px 3px var(--cor04);
+    
+    margin-bottom: 5px;
+}
+header p{
+    margin-top: 0px;
+    font-family: var(--fonte-trechos);
+}
+section p {
+    font-family: var(--fonte-central);
+    font-size: 2.4em;
+    line-height: 1.4em;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin: 0px;
+}
+.est03{
+    background-image: url(imagens/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.est05{
+    background-image: url(imagens/museums-victoria-HLvV5_BLs_k-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.est03, .est05 {
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+    background-blend-mode: overlay; /* Mescla o fundo e a cor */
+    color: white; /* Garante que o texto será visível */
+    width: 96vw;
+    height: 96vh;
+}
+footer{
+    margin-top: 20px;
+    background-color: var(--cor04);
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-trechos);
+}
